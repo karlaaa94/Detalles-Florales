@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Florales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            
+            <h2 class="logo">D<span>F</span></h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="about.html">ACERCA DE NOSOTROS</a></li>
+                <li><a href="products.html">PRODUCTOS</a></li>
+                <li><a href="contact.html">CONTÁCTANOS</a></li>
+            </ul>
+
+                <div class="search-bar">
+                    <input type="text" placeholder=" Buscar...">
+                    <button type="submit" class="iniciarsesión">Iniciar sesión</button>
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+        </div>
+
+        <div class="container">
+            <label for="" class="icon-close"><i class="fa fa-times" aria-hidden="true"></i></label>
+
+            <div class="card">
+                <h3>Iniciar sesión</h3>
+                <form action="#">
+                    <div class="input-card">
+                        <span class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <input type="email" required>
+                        <label>Correo</label>
+                    </div>
+                    <div class="input-card">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="remember-me">
+                        <label><input type="checkbox">Recordarme</label>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit" class="btn-login">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div> 
+
+        <div class="main-section">
+            <h1 class="fdel">&nbsp;DETALLES <span>&nbsp;FLORALES</span></h1>
+            <p class="sen">"Nuestro amor por las flores se transformó en una pasión por crear arreglos florales <br> impresionantes que llenan de alegría
+                 y belleza la vida de las personas. Durante más <br> de cinco años, nuestro dedicado equipo de floristas ha estado creando ramos únicos 
+                 <br> y encantadores para cada ocasión. Le invitamos a descubrir el arte y el amor que le <br> ponemos 
+                 a cada una de nuestras creaciones."</p>
+
+            <div class="btn">
+                <button><a href="products.html"> Comprar <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></button>
+                <button class="lrm"><a href="about.html">Saber Más <i class="fa fa-info-circle" aria-hidden="true"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const btnPopup = document.querySelector('.login');
+        const iconClose = document.querySelector('.icon-close');
+
+        btnPopup.addEventListener('click', ()=> {
+            container.classList.add('active-popup');
+        });
+
+        iconClose.addEventListener('click', ()=> {
+            container.classList.remove('active-popup');
+        });
+    </script>
+
+</body>
+</html>
